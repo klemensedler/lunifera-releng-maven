@@ -635,9 +635,9 @@
                                         vesion 1.1.1|Indiana University Extreme! Lab
                                         Software License</licenseMerge>
                                 </licenseMerges>
-                                <skipUpdateProjectLicense>${license.skipUpdateProjectLicense}</skipUpdateProjectLicense>
-                                <skipAddThirdParty>${license.skipAddThirdParty}</skipAddThirdParty>
-                                <skipCheckLicense>${license.skipCheckLicense}</skipCheckLicense>
+                                <skipUpdateProjectLicense>true</skipUpdateProjectLicense>
+                                <skipAddThirdParty>true</skipAddThirdParty>
+                                <skipCheckLicense>true</skipCheckLicense>
 
                             </configuration>
                             <executions>
