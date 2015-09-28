@@ -952,12 +952,12 @@
         </pluginManagement>
     </build>
     <dependencies>
-        <dependency>
-            <groupId>org.lunifera.releng.maven</groupId>
-            <artifactId>lunifera-releng-maven-licenses</artifactId>
-            <classifier>third-party</classifier>
-            <type>properties</type>
-            <scope>provided</scope>
-        </dependency>
+<!--         <dependency> -->
+<!--             <groupId>org.lunifera.releng.maven</groupId> -->
+<!--             <artifactId>lunifera-releng-maven-licenses</artifactId> -->
+<!--             <classifier>third-party</classifier> -->
+<!--             <type>properties</type> -->
+<!--             <scope>provided</scope> -->
+<!--         </dependency> -->
     </dependencies>
 </project>
