@@ -218,7 +218,7 @@
         <license.failIfWarning>false</license.failIfWarning>
         <license.dryRun>true</license.dryRun>
         <license.copyrightOwners>C4biz Softwares ME, Loetz KG</license.copyrightOwners>
-        <license.skip.header>false</license.skip.header>
+        <license.skip.header>true</license.skip.header>
         <license.roots>src</license.roots>
         <license.canUpdateCopyright>true</license.canUpdateCopyright>
         <license.canUpdateDescription>true</license.canUpdateDescription>
@@ -586,8 +586,8 @@
                             <version>${report.license.version}</version>
                             <inherited>true</inherited>
                             <configuration>
-                                <skipAddThirdParty>${lunifera.build.ignore.license}</skipAddThirdParty>
-                                <skipCheckLicense>${lunifera.build.ignore.license}</skipCheckLicense>
+                                <skipAddThirdParty>true</skipAddThirdParty>
+                                <skipCheckLicense>true</skipCheckLicense>
                                 <verbose>false</verbose>
                                 <acceptPomPackaging>true</acceptPomPackaging>
                                 <generateBundle>true</generateBundle>
@@ -595,7 +595,7 @@
                                 <useRepositoryMissingFiles>true</useRepositoryMissingFiles>
                                 <quiet>false</quiet>
                                 <useMissingFile>true</useMissingFile>
-                                <failIfWarning>${license.failIfWarning}</failIfWarning>
+                                <failIfWarning>false</failIfWarning>
                                 <encoding>UTF-8</encoding>
                                 <useAsMissingFileRepository>org.lunifera.releng.maven:lunifera-releng-maven-licenses:0.12.5-SNAPSHOT</useAsMissingFileRepository>
                                 <licenseMerges>
