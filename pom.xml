@@ -62,12 +62,12 @@
     <url>${lunifera.site.repository.url}</url>
     <distributionManagement>
         <repository>
-            <id>compex-nexus-release</id>
+            <id>lunifera-nexus-release</id>
             <name>Nexus Release Repository</name>
             <url>${distribution.repository.release.url}</url>
         </repository>
         <snapshotRepository>
-            <id>compex-nexus-snapshots</id>
+            <id>lunifera-nexus-snapshots</id>
             <name>Sonatype Nexus Snapshots</name>
             <url>${distribution.repository.snapshot.url}</url>
         </snapshotRepository>
