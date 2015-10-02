@@ -181,9 +181,9 @@
         <takari.version>1.11.7</takari.version>
         <takari.test.version>2.2.0-SNAPSHOT</takari.test.version>
         <lunifera.build.tools.version>0.2.1-SNAPSHOT</lunifera.build.tools.version>
-        <gogo.runtime.version>0.12.1</gogo.runtime.version>
-        <gogo.command.version>0.14.0</gogo.command.version>
-        <gogo.shell.version>0.11.0-SNAPSHOT</gogo.shell.version>
+        <gogo.runtime.version>0.10.0</gogo.runtime.version>
+        <gogo.command.version>0.10.0</gogo.command.version>
+        <gogo.shell.version>0.10.0</gogo.shell.version>
         <eclipse.aether.version>1.0.0.v20140518</eclipse.aether.version>
         <paxexam.version>4.4.0</paxexam.version>
         <paxurl.version>2.3.0</paxurl.version>
