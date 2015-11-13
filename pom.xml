@@ -142,7 +142,7 @@
         <distribution.repository.release.url>http://maven.lunifera.org:8086/nexus/content/repositories/newreleases/</distribution.repository.release.url>
 
         <!-- where to deploy the snapshot artifacts -->
-        <distribution.repository.snapshot.url>http://maven.lunifera.org:8086/nexus/content/repositories/new:snapshots/</distribution.repository.snapshot.url>
+        <distribution.repository.snapshot.url>http://maven.lunifera.org:8086/nexus/content/repositories/newsnapshots/</distribution.repository.snapshot.url>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
