@@ -21,7 +21,6 @@
     <version>0.12.5-SNAPSHOT</version>
 
     <modules>
-        <module>lunifera-releng-maven-licenses</module>
         <module>lunifera-releng-maven-parent-mbp</module>
         <module>lunifera-releng-maven-parent-tycho</module>
         <module>lunifera-releng-maven-fpom-equinox-luna</module>
@@ -30,6 +29,7 @@
         <module>lunifera-releng-maven-fpom-itests</module>
         <module>lunifera-releng-maven-fpom-mplugin</module>
         <module>lunifera-releng-maven-fpom-equinox-mars</module>
+        <module>lunifera-releng-maven-licenses</module>
     </modules>
 
     <inceptionYear>2012</inceptionYear>
