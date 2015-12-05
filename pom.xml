@@ -1136,6 +1136,20 @@
 								<versionRange>[2.7.3,2.8.0)</versionRange>
 							</restrictTo>
 						</filter>
+						<filter>
+							<type>eclipse-plugin</type>
+							<id>org.eclipse.xtext.smap</id>
+							<restrictTo>
+								<versionRange>[2.7.3,2.8.0)</versionRange>
+							</restrictTo>
+						</filter>
+						<filter>
+							<type>eclipse-plugin</type>
+							<id>org.eclipse.xtext.xbase.lib</id>
+							<restrictTo>
+								<versionRange>[2.7.3,2.8.0)</versionRange>
+							</restrictTo>
+						</filter>
 					</filters>
 				</configuration>
 			</plugin>
