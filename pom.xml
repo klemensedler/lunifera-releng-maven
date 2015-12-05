@@ -1103,6 +1103,27 @@
 					<filters>
 						<filter>
 							<type>eclipse-plugin</type>
+							<id>org.eclipse.e4.core.services</id>
+							<restrictTo>
+								<versionRange>[1.2.0,2.0.0)</versionRange>
+							</restrictTo>
+						</filter>
+						<filter>
+							<type>eclipse-plugin</type>
+							<id>org.eclipse.xtend.lib</id>
+							<restrictTo>
+								<versionRange>[2.7.3,2.8.0)</versionRange>
+							</restrictTo>
+						</filter>
+						<filter>
+							<type>eclipse-plugin</type>
+							<id>org.eclipse.xtend.lib.macro</id>
+							<restrictTo>
+								<versionRange>[2.7.3,2.8.0)</versionRange>
+							</restrictTo>
+						</filter>
+						<filter>
+							<type>eclipse-plugin</type>
 							<id>org.eclipse.xtext</id>
 							<restrictTo>
 								<versionRange>[2.7.3,2.8.0)</versionRange>
@@ -1125,6 +1146,13 @@
 						<filter>
 							<type>eclipse-plugin</type>
 							<id>org.eclipse.xtext.util</id>
+							<restrictTo>
+								<versionRange>[2.7.3,2.8.0)</versionRange>
+							</restrictTo>
+						</filter>
+						<filter>
+							<type>eclipse-plugin</type>
+							<id>org.eclipse.xtext.xbase.lib</id>
 							<restrictTo>
 								<versionRange>[2.7.3,2.8.0)</versionRange>
 							</restrictTo>
@@ -1277,7 +1305,8 @@
 						<goals>deploy site-deploy</goals>
 						<preparationGoals>clean install</preparationGoals>
 						<arguments>
-							-Dlunifera.build.release -Dlunifera.build.full -Dlunifera.build.itests.run
+							-Dlunifera.build.release -Dlunifera.build.full
+							-Dlunifera.build.itests.run
 						</arguments>
 						<localCheckout>true</localCheckout>
 						<tagNameFormat>v@{project.version}</tagNameFormat>
