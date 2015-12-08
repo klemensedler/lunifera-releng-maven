@@ -1673,7 +1673,25 @@
 			</url>
 			<layout>p2</layout>
 		</repository>
-
+		<repository>
+			<id>emft-mwe</id>
+			<url>http://download.eclipse.org/modeling/emft/mwe/updates/releases/                
+			</url>
+			<layout>p2</layout>
+		</repository>
+        <repository>
+            <id>apache-deps-snapshots</id>
+            <name>Apache Nexus Snapshots</name>
+            <url>https://repository.apache.org/content/repositories/snapshots
+            </url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <updatePolicy>always</updatePolicy>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
 		<repository>
 			<id>vaadin-addons</id>
 			<url>http://maven.vaadin.com/vaadin-addons</url>
