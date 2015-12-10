@@ -1801,6 +1801,20 @@
             <url>${distribution.server.baseurl}/downloads/p2/eef/</url>
             <layout>p2</layout>
         </repository>
+        <repository>
+	        <id>osbee-nexus-thirdparty</id>
+	        <name>OS.bee Nexus Thirdparty</name>
+	        <url>${distribution.server.baseurl}:8086/nexus/content/repositories/thirdparty/
+	        </url>
+	        <releases>
+	                <enabled>true</enabled>
+	        </releases>
+	        <snapshots>
+	                <updatePolicy>always</updatePolicy>
+	                <enabled>true</enabled>
+	        </snapshots>
+        </repository>
+        
 	
 	</repositories>
 
