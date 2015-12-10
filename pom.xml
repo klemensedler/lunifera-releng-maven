@@ -138,11 +138,14 @@
 			end -->
 		<distribution.site.url>${lunifera.site.protocol}${lunifera.site.repository.url}</distribution.site.url>
 
+		<!-- the server where to deploy to -->
+		<distribution.server.baseurl>http://download.osbee.org</distribution.server.baseurl>
+		
 		<!-- where to deploy the release artifacts -->
-		<distribution.repository.release.url>http://maven.lunifera.org:8086/nexus/content/repositories/newreleases/</distribution.repository.release.url>
+		<distribution.repository.release.url>${distribution.server.baseurl}:8086/nexus/content/repositories/releases/</distribution.repository.release.url>
 
 		<!-- where to deploy the snapshot artifacts -->
-		<distribution.repository.snapshot.url>http://maven.lunifera.org:8086/nexus/content/repositories/newsnapshots/</distribution.repository.snapshot.url>
+		<distribution.repository.snapshot.url>${distribution.server.baseurl}:8086/nexus/content/repositories/snapshots/</distribution.repository.snapshot.url>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -1601,7 +1604,7 @@
 			</snapshots>
 		</repository>
 		<repository>
-			<id>ecliptical DS</id>
+			<id>ecliptical</id>
 			<url>http://download.eclipticalsoftware.com/updates/
 			</url>
 			<layout>p2</layout>
@@ -1734,11 +1737,70 @@
 			<url>http://download.eclipse.org/sirius/updates/releases/3.0.2/luna/</url>
 			<layout>p2</layout>
 		</repository>
-		<repository>
-			<id>EEF</id>
-			<url>http://lun.lunifera.org/downloads/p2/eef/</url>
-			<layout>p2</layout>
-		</repository>
+        <repository>
+            <id>e4 Update site</id>
+            <url>http://download.vogella.com/luna/e4tools/</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>E4 P2</id>
+            <url>http://download.eclipse.org/e4/downloads/drops/R-0.12-201206131100/repository/</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>UOMO update site (0.6)</id>
+            <url>http://download.eclipse.org/uomo/0.6/repository/</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>swtbot</id>
+            <url>http://download.eclipse.org/technology/swtbot/releases/2.2.1/</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>ecoretools</id>
+            <url>http://download.eclipse.org/ecoretools/updates/releases/2.0.3/luna/</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>Eclipse Windowbuilder</id>
+            <url>http://download.eclipse.org/windowbuilder/WB/release/R201406251200/4.4/</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>Eclipse Datatools</id>
+            <url>http://download.eclipse.org/datatools/updates/</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>central.maven.org</id>
+            <url>http://central.maven.org/maven2/</url>
+        </repository>
+        <repository>
+            <id>Testing repo for o.e.ui</id>
+            <url>http://download.jboss.org/jbosstools/static/targetplatforms/jbosstoolstarget/4.42.0.Final/REPO</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>Obeo-BPMN</id>
+            <url>http://marketplace.obeonetwork.com/updates/sirius2.0/</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>Groovy_stuff</id>
+            <url>http://dist.springsource.org/release/GRECLIPSE/e4.4/</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>p2.restlet.com-2.1</id>
+            <url>http://p2.restlet.com/2.1</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>EEF</id>
+            <url>${distribution.server.baseurl}/downloads/p2/eef/</url>
+            <layout>p2</layout>
+        </repository>
 	
 	</repositories>
 
