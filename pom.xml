@@ -1609,6 +1609,19 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
+        <repository>
+            <id>apache-maven</id>
+            <name>Apache Common</name>
+            <url>https://repo1.maven.apache.org/maven2/
+            </url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+        <repository>
+            <id>central</id>
+            <url>http://repo.maven.apache.org/maven2</url>
+        </repository>
 		<repository>
 			<id>ecliptical</id>
 			<url>http://download.eclipticalsoftware.com/updates/
@@ -1725,7 +1738,7 @@
 		</repository>
 		<repository>
 			<id>Eclipse Gemini Maven repository</id>
-              <url>http://download.eclipse.org/gemini/mvn/</url>
+            <url>http://download.eclipse.org/gemini/mvn/</url>
 		</repository>
 		<repository>
 			<id>Gemini JPA</id>
