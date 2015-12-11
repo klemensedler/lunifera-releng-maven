@@ -1726,7 +1726,6 @@
 		<repository>
 			<id>Eclipse Gemini Maven repository</id>
               <url>http://download.eclipse.org/gemini/mvn/</url>
-			<layout>p2</layout>
 		</repository>
 		<repository>
 			<id>Gemini JPA</id>
