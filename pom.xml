@@ -1695,6 +1695,11 @@
 			</url>
 			<layout>p2</layout>
 		</repository>
+        <repository>
+            <id>xtend</id>
+            <url>http://build.eclipse.org/common/xtend/maven/
+            </url>
+        </repository>
 		<repository>
 			<id>emft-mwe</id>
 			<url>http://download.eclipse.org/modeling/emft/mwe/updates/releases/                
