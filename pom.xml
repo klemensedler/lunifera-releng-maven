@@ -1743,7 +1743,7 @@
 		</repository>
 		<repository>
 			<id>Gemini JPA</id>
-              <url>http://download.eclipse.org/gemini/updates/jpa</url>
+              <url>http://download.eclipse.org/gemini/updates/jpa/1.1.0</url>
 			<layout>p2</layout>
 		</repository>
 		<repository>
