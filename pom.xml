@@ -1612,7 +1612,7 @@
         <repository>
             <id>apache-maven</id>
             <name>Apache Common</name>
-            <url>https://repo1.maven.apache.org/maven2/
+            <url>https://repo.maven.apache.org/maven2/
             </url>
             <releases>
                 <enabled>true</enabled>
