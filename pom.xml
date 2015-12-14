@@ -1618,10 +1618,6 @@
                 <enabled>true</enabled>
             </releases>
         </repository>
-        <repository>
-            <id>central</id>
-            <url>http://repo.maven.apache.org/maven2</url>
-        </repository>
 		<repository>
 			<id>ecliptical</id>
 			<url>http://download.eclipticalsoftware.com/updates/
