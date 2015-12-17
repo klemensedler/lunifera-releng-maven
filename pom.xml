@@ -43,58 +43,6 @@
 		<url>www.lunifera.org</url>
 	</organization>
 
-	<issueManagement>
-		<system>Jira</system>
-		<!-- convention is to create jira's components using the same name as the 
-			aggregator projects -->
-		<url>https://lunifera.atlassian.net/browse/LS?pid=10400</url>
-	</issueManagement>
-
-	<!-- ciManagement, distributionManagement(Site) and scm should be duplicated 
-		for every git repository (parent pom) and in most cases for each aggregator 
-		due the fact that its modules uses different parents. -->
-
-	<ciManagement>
-		<system>Jenkins</system>
-		<url>${lunifera.ci.server.url}${lunifera.gitrepo.name}</url>
-	</ciManagement>
-
-	<url>${lunifera.site.repository.url}</url>
-	<distributionManagement>
-		<repository>
-			<id>compex-nexus-release</id>
-			<name>Nexus Release Repository</name>
-			<url>${distribution.repository.release.url}</url>
-		</repository>
-		<snapshotRepository>
-			<id>compex-nexus-snapshots</id>
-			<name>Sonatype Nexus Snapshots</name>
-			<url>${distribution.repository.snapshot.url}</url>
-		</snapshotRepository>
-		<site>
-			<id>gh-pages</id>
-			<name>Lunifera GitHub Pages</name>
-			<url>${distribution.site.url}</url>
-		</site>
-	</distributionManagement>
-	<scm>
-		<!-- connection and developerConnection must be added in children in order 
-			to use with git -->
-		<connection>${lunifera.scm.connection}</connection>
-		<developerConnection>${lunifera.scm.connection.dev}</developerConnection>
-		<url>${lunifera.scm.url}</url>
-		<tag>HEAD</tag>
-	</scm>
-	<!-- End -->
-
-	<licenses>
-		<license>
-			<name>Eclipse Public License v1.0</name>
-			<url>http://www.eclipse.org/legal/epl-v10.html</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
-
 	<properties>
 		<maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
 		<lunifera.site.skip>false</lunifera.site.skip>
@@ -115,7 +63,8 @@
 		<lunifera.scm.connection.dev.host>git@github.com</lunifera.scm.connection.dev.host>
 
 		<!-- the base for CI URL -->
-		<lunifera.ci.server.url>http://jenkins.lunifera.org:8083/job/</lunifera.ci.server.url>
+		<lunifera.ci.server.url>http://10.1.13.15:8083/job/</lunifera.ci.server.url>
+		<lunifera.ci.server.jobprefix>master-kernel</lunifera.ci.server.jobprefix>
 
 		<!-- current profile to use: (pre-release|sandbox|retired) -->
 		<lunifera.site.profile />
@@ -281,6 +230,60 @@
 		<pojosr.version>0.2.1</pojosr.version>
 
 	</properties>
+
+
+	<issueManagement>
+		<system>Jira</system>
+		<!-- convention is to create jira's components using the same name as the 
+			aggregator projects -->
+		<url>https://lunifera.atlassian.net/browse/LS?pid=10400</url>
+	</issueManagement>
+
+	<!-- ciManagement, distributionManagement(Site) and scm should be duplicated 
+		for every git repository (parent pom) and in most cases for each aggregator 
+		due the fact that its modules uses different parents. -->
+
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>${lunifera.ci.server.url}${lunifera.ci.server.jobprefix}${lunifera.gitrepo.name}</url>
+	</ciManagement>
+
+	<url>${lunifera.site.repository.url}</url>
+	<distributionManagement>
+		<repository>
+			<id>compex-nexus-release</id>
+			<name>Nexus Release Repository</name>
+			<url>${distribution.repository.release.url}</url>
+		</repository>
+		<snapshotRepository>
+			<id>compex-nexus-snapshots</id>
+			<name>Sonatype Nexus Snapshots</name>
+			<url>${distribution.repository.snapshot.url}</url>
+		</snapshotRepository>
+		<site>
+			<id>gh-pages</id>
+			<name>Lunifera GitHub Pages</name>
+			<url>${distribution.site.url}</url>
+		</site>
+	</distributionManagement>
+	<scm>
+		<!-- connection and developerConnection must be added in children in order 
+			to use with git -->
+		<connection>${lunifera.scm.connection}</connection>
+		<developerConnection>${lunifera.scm.connection.dev}</developerConnection>
+		<url>${lunifera.scm.url}</url>
+		<tag>HEAD</tag>
+	</scm>
+	<!-- End -->
+
+	<licenses>
+		<license>
+			<name>Eclipse Public License v1.0</name>
+			<url>http://www.eclipse.org/legal/epl-v10.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
 
 	<profiles>
 		<profile>
