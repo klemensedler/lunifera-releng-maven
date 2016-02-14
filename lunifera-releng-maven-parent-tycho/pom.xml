@@ -908,6 +908,7 @@
                     <configuration>
                         <resolver>p2</resolver>
                         <pomDependencies>consider</pomDependencies>
+                        <executionEnvironment>JavaSE-1.8</executionEnvironment>
                     </configuration>
                 </plugin>
                 <plugin>
